@@ -1,0 +1,28 @@
+    1  cd Desktop
+    2  mkdir GitTestes
+    3  cd GitTestes
+    4  git config --global user.name '[Genesys]'
+    5  git config --global user.email 'genesys.merchan@gmail.com'
+    6  git init
+    7  git status
+    8  echo '#Aprendendo usar o Git' > readme.md
+    9  git status
+   10  git add readme.md
+   11  git status
+   12  git commit -m 'Commit inicial'
+   13  echo'##Aula 1' >> readme.md
+   14  git status
+   15  echo '##Aula 1' >> readme.md
+   16  echo 'Genesys Rondon' > participantes.txt
+   17  git status
+   18  git add .
+   19  git status
+   20  git restore --staged participantes.txt
+   21  git status
+   22  git add participantes.txt
+   23  git restore --staged .
+   24  git commit -am 'Alteração no readme'
+   25  git status
+   26  git add participantes.txt
+   27  git commit -m 'Adicionado participantes.txt'
+   28  history > Aula_3.txt
